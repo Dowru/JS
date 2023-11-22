@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Carrito libros</title>
+</head>
+<body>
+    <h1>ADSO BIBLIOTECA</h1>
+
+    <div class="menu">
+        <p>Cantidad</p>
+        <p>Precio</p>
+        <p>Total</p>
+    </div>
+
+    <h2>Libro Python</h2>
+    <div class="cont1">
+        <div class="libro">
+            <button class="bot1" onclick="incremento('ValorPython', 'PrecioPython', 'totalPPython')">+</button>
+            <button class="bot2" onclick="decremento('ValorPython', 'PrecioPython', 'totalPPython')">-</button>
+            <button class="papelera" onclick="resetear('ValorPython', 'PrecioPython', 'totalPPython')">🗑️</button>
+            <div class="contador" id="ValorPython">0</div>
+            <div class="texto" id="PrecioPython">15,000</div>
+            <div class="total" id="totalPPython">0</div>
+        </div>
+    </div>
+
+    <h2>Libro JavaScript</h2>
+    <div class="cont1">
+        <div class="libro">
+            <button class="bot1" onclick="incremento('ValorJavaScript', 'PrecioJavaScript', 'totalPJavaScript')">+</button>
+            <button class="bot2" onclick="decremento('ValorJavaScript', 'PrecioJavaScript', 'totalPJavaScript')">-</button>
+            <button class="papelera" onclick="resetear('ValorJavaScript', 'PrecioJavaScript', 'totalPJavaScript')">🗑️</button>
+            <div class="contador" id="ValorJavaScript">0</div>
+            <div class="texto" id="PrecioJavaScript">35,000</div>
+            <div class="total" id="totalPJavaScript">0</div>
+        </div>
+    </div>
+
+    <script src="js/code.js"></script>
+</body>
+</html>

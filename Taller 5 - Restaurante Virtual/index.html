@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>ChillQuarium</title>
+</head>
+<body>
+    <h1>ChillQuarium</h1>
+
+    <div class="menu">
+            <div class="platos&bebidas">
+                <h2>PLATOS</h2>
+                <ul>
+                    <li>Ceviche - $14,000</li>
+                    <li>Paella - $35,000</li>
+                    <li>Sushi - $40,000</li>
+                    <li>Pescado al horno - $25,000</li>
+                    <li>Pescado a la parrilla - $20,000</li>
+                </ul>
+            </div>
+            <div class="platos&bebidas">
+                <h2>BEBIDAS</h2>
+                <ul>
+                    <li>Vino Blanco - $22,000</li>
+                    <li>Cerveza - $4,000</li>
+                    <li>Sidra - $8,000</li>
+                    <li>Cócteles - $12,000</li>
+                    <li>Agua de coco - $6,000</li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="pedido">
+        <br>
+        <select class="form-selected" aria-label="Default select example" id="selectPlato">
+            <option selected value="0">Tipo de Plato</option>
+            <option value="14000">Ceviche</option>
+            <option value="35000">Paella</option>
+            <option value="40000">Sushi</option>
+            <option value="25000">Pescado al horno</option>
+            <option value="20000">Pescado a la parrilla</option>
+        </select>
+        <input type="number" id="t1" class="form-control" placeholder="Cantidad de platos"> 
+        <br>
+        <select class="form-selected" aria-label="Default select example" id="selectBebida">
+            <option selected value="0">Tipo de bebida</option>
+            <option value="22000">Vino Blanco</option>
+            <option value="4000">Cerveza</option>
+            <option value="8000">Sidra</option>
+            <option value="12000">Cócteles</option>
+            <option value="6000">Agua de coco</option>
+        </select>
+        <input type="number" id="t2" class="form-control" placeholder="Cantidad de bebidas"> 
+        <br>
+        <button onclick="calcularPrecio()">Calcular Precio</button>
+    </div>
+
+    <div id="pedidoCalculado"></div>
+
+    <script src="js/code.js"></script>
+</body>
+</html>

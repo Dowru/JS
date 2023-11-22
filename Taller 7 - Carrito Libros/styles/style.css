@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/fondo.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 35px;
+    color: #ffffff;
+    font-family: monospace;
+}
+
+h2 {
+    text-align: start;
+    margin-left: 10px;
+    margin-right: 25px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: monospace;
+}
+
+p{
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    margin-left: 150px;
+    margin-right: 80px;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: monospace;
+    margin-bottom: -20px;
+}
+
+.texto {
+    text-align: start;
+    margin-left: 65px;
+    margin-top: 9px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: monospace;
+}
+
+.libro {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.total {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+    color: white;
+}
+
+.contador {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+    color: white;
+}
+
+.bots {
+    display: flex;
+}
+
+.bot1,.bot2,.papelera {
+    margin: 5px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid #ffffff5e;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px;
+}
+
+.bot1:hover {
+    background-color: #b0d12a;
+    color: black; 
+}
+
+.bot2:hover {
+    background-color: #ff073a;
+    color: black;
+}
+
+.papelera:hover {
+    background-color: #00000045;
+}
